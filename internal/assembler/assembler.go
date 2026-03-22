@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"claudio/internal/state"
+	"github.com/achgithub/claudio/internal/state"
 
 	"gopkg.in/yaml.v3"
 )

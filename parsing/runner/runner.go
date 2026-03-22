@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"claudio/internal/assembler"
-	"claudio/internal/state"
+	"github.com/achgithub/claudio/internal/assembler"
+	"github.com/achgithub/claudio/internal/state"
 
 	"github.com/fatih/color"
 )

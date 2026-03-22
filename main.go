@@ -5,11 +5,11 @@ import (
 	"os"
 	"strings"
 
-	"claudio/internal/anthropic"
-	"claudio/internal/assembler"
-	"claudio/internal/runner"
-	"claudio/internal/state"
-	"claudio/internal/validator"
+	"github.com/achgithub/claudio/internal/anthropic"
+	"github.com/achgithub/claudio/internal/assembler"
+	"github.com/achgithub/claudio/internal/runner"
+	"github.com/achgithub/claudio/internal/state"
+	"github.com/achgithub/claudio/internal/validator"
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"

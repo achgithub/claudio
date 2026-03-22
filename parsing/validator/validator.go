@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"claudio/internal/assembler"
-	"claudio/internal/state"
+	"github.com/achgithub/claudio/internal/assembler"
+	"github.com/achgithub/claudio/internal/state"
 )
 
 // Validate runs all checks on staged files and returns a list of violation messages.
@@ -110,7 +110,7 @@ func checkGoImports(f assembler.StagedFile, sess *state.Session) []string {
 		}
 		if inImport || strings.HasPrefix(trimmed, "import \"") {
 			// Check internal imports
-			if strings.Contains(trimmed, "claudio/internal/") || strings.Contains(trimmed, f.Path[:strings.Index(f.Path, "/")+1]) {
+			if strings.Contains(trimmed, "github.com/achgithub/claudio/internal/") || strings.Contains(trimmed, f.Path[:strings.Index(f.Path, "/")+1]) {
 				// Extract the path
 				start := strings.Index(trimmed, "\"")
 				end := strings.LastIndex(trimmed, "\"")
