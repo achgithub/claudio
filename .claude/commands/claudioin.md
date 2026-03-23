@@ -1,0 +1,1 @@
+Read the file session/prompt-$ARGUMENTS.md — follow the SYSTEM instructions and USER task exactly. Write your response (code files only, using fenced blocks with file paths) to session/response-$ARGUMENTS.md
